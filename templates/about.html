@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ a }}, {{ b }}
+<ul>
+    {% for i in my_list %}
+    <li>{{ i }}</li>
+    {% if i == 3 %}
+    <li>zxc</li>
+    {% endif %}
+    {% endfor%}
+</ul>
+{% endblock content %}
